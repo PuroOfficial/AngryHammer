@@ -1,33 +1,34 @@
 name: The program does not behave correctly.
+
 description: File a bug report
 
 body:
+
   - type: markdown
     attributes:
-      value: | 
-      ## MAKE SURE THAT THIS IS NOT FROM GOODBYEDPI IF IT IS, REPORT THE ISSUE TO GOODBYEDPI NOT ANGRYHAMMER.
-  - type: markdown
-    attributes:
-      value: | 
-      ## `(*>﹏<*)′
+      value: |
+        ## Hey! Make sure this is not from any other repo. If it is, please report this issue to the correct repo.
+
   - type: input
     id: os
     attributes:
-      label: Operating system
-      description: Enter your Windows version. For Windows 10 and 11 includes a build number.
+      label: Operating System
+      description: Enter your Windows version. For Windows 10 and 11, include the build number.
       placeholder: ex. Windows 10 22H2
     validations:
       required: true
+
   - type: textarea
     id: what-happened
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is
-      placeholder: Attach the screenshots for clarity.
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Attach screenshots for clarity.
     validations:
       required: true
+
   - type: textarea
     id: additional-info
     attributes:
-      label: Additional information
-      description: If you have a hints on why this bug happens, you can express it here.
+      label: Additional Information
+      description: If you have hints on why this bug happens, you can express it here.
