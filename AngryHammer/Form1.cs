@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
@@ -61,16 +55,24 @@ namespace AngryHammer
 
             try
             {
+                bool is64BitOS = Environment.Is64BitOperatingSystem;
+
+                string arch = "x86";
+
+                if (is64BitOS)
+                {
+                    arch = "x86_64";
+                }
                 string randomHex = GenerateRandomHex(116);
                 string russiablacklistpath = Application.StartupPath + "\\GoodbyeDPI\\russia-blacklist.txt";
                 string youtubeblacklistpath = Application.StartupPath + "\\GoodbyeDPI\\russia-youtube.txt";
                 if (AdvancedCheckBox.Checked == false)
                 {
-                    Process.Start(Application.StartupPath + "\\GoodbyeDPI\\x86_64\\goodbyedpi.exe", "-9 --fake-gen 29 --fake-from-hex " + randomHex + " --blacklist " + russiablacklistpath + " --blacklist " + youtubeblacklistpath);
+                    Process.Start(Application.StartupPath + "\\GoodbyeDPI\\"+arch+"\\goodbyedpi.exe", "-9 --fake-gen 29 --fake-from-hex " + randomHex + " --blacklist " + russiablacklistpath + " --blacklist " + youtubeblacklistpath);
                 }
                 else
                 {
-                    Process.Start(Application.StartupPath + "\\GoodbyeDPI\\x86_64\\goodbyedpi.exe", "-"+ numericArgUpDown.Value +" --fake-gen "+numericFakeGenUpDown.Value+" --fake-from-hex " + randomHex + " --blacklist " + russiablacklistpath + " --blacklist " + youtubeblacklistpath);
+                    Process.Start(Application.StartupPath + "\\GoodbyeDPI\\"+arch+"\\goodbyedpi.exe", "-"+ numericArgUpDown.Value +" --fake-gen "+numericFakeGenUpDown.Value+" --fake-from-hex " + randomHex + " --blacklist " + russiablacklistpath + " --blacklist " + youtubeblacklistpath);
                 }
             }
             catch (Exception expection)

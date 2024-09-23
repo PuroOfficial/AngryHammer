@@ -59,7 +59,7 @@ namespace AngryHammer
             // 
             this.deployButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.deployButton.Location = new System.Drawing.Point(13, 56);
+            this.deployButton.Location = new System.Drawing.Point(12, 56);
             this.deployButton.Name = "deployButton";
             this.deployButton.Size = new System.Drawing.Size(145, 23);
             this.deployButton.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace AngryHammer
             // 
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar.Location = new System.Drawing.Point(13, 85);
+            this.progressBar.Location = new System.Drawing.Point(12, 85);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(145, 23);
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -82,7 +82,7 @@ namespace AngryHammer
             // 
             this.AdvancedCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdvancedCheckBox.Location = new System.Drawing.Point(12, 114);
+            this.AdvancedCheckBox.Location = new System.Drawing.Point(11, 114);
             this.AdvancedCheckBox.Name = "AdvancedCheckBox";
             this.AdvancedCheckBox.Size = new System.Drawing.Size(146, 24);
             this.AdvancedCheckBox.TabIndex = 3;
@@ -98,7 +98,7 @@ namespace AngryHammer
             this.AdvancedGroupBox.Controls.Add(this.label3);
             this.AdvancedGroupBox.Controls.Add(this.label2);
             this.AdvancedGroupBox.Controls.Add(this.numericArgUpDown);
-            this.AdvancedGroupBox.Location = new System.Drawing.Point(12, 145);
+            this.AdvancedGroupBox.Location = new System.Drawing.Point(11, 145);
             this.AdvancedGroupBox.Name = "AdvancedGroupBox";
             this.AdvancedGroupBox.Size = new System.Drawing.Size(146, 100);
             this.AdvancedGroupBox.TabIndex = 4;
