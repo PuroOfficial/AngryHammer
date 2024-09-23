@@ -6,6 +6,7 @@ body:
     attributes:
       value: | 
       ## MAKE SURE THAT THIS IS NOT FROM GOODBYEDPI IF IT IS, REPORT THE ISSUE TO GOODBYEDPI NOT ANGRYHAMMER.
+  - type: markdown
     attributes:
       value: | 
       ## `(*>﹏<*)′
