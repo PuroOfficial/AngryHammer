@@ -4,8 +4,7 @@ description: File a bug report
 body:
   - type: markdown
     attributes:
-      value: |
-      ## MAKE SURE THAT THIS IS NOT FROM GOODBYEDPI IF IT IS, REPORT THE ISSUE TO GOODBYEDPI NOT ANGRYHAMMER.
+      value: ## MAKE SURE THAT THIS IS NOT FROM GOODBYEDPI IF IT IS, REPORT THE ISSUE TO GOODBYEDPI NOT ANGRYHAMMER.
   - type: input
     id: os
     attributes:
