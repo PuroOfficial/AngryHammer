@@ -39,6 +39,7 @@ namespace AngryHammer
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericArgUpDown = new System.Windows.Forms.NumericUpDown();
+            this.deployRussiaButton = new System.Windows.Forms.Button();
             this.AdvancedGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericFakeGenUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericArgUpDown)).BeginInit();
@@ -71,7 +72,7 @@ namespace AngryHammer
             // 
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar.Location = new System.Drawing.Point(12, 85);
+            this.progressBar.Location = new System.Drawing.Point(12, 114);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(145, 23);
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -82,7 +83,7 @@ namespace AngryHammer
             // 
             this.AdvancedCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdvancedCheckBox.Location = new System.Drawing.Point(11, 114);
+            this.AdvancedCheckBox.Location = new System.Drawing.Point(11, 143);
             this.AdvancedCheckBox.Name = "AdvancedCheckBox";
             this.AdvancedCheckBox.Size = new System.Drawing.Size(146, 24);
             this.AdvancedCheckBox.TabIndex = 3;
@@ -98,7 +99,7 @@ namespace AngryHammer
             this.AdvancedGroupBox.Controls.Add(this.label3);
             this.AdvancedGroupBox.Controls.Add(this.label2);
             this.AdvancedGroupBox.Controls.Add(this.numericArgUpDown);
-            this.AdvancedGroupBox.Location = new System.Drawing.Point(11, 145);
+            this.AdvancedGroupBox.Location = new System.Drawing.Point(11, 173);
             this.AdvancedGroupBox.Name = "AdvancedGroupBox";
             this.AdvancedGroupBox.Size = new System.Drawing.Size(146, 100);
             this.AdvancedGroupBox.TabIndex = 4;
@@ -151,11 +152,24 @@ namespace AngryHammer
             0,
             0});
             // 
+            // deployRussiaButton
+            // 
+            this.deployRussiaButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.deployRussiaButton.Location = new System.Drawing.Point(12, 85);
+            this.deployRussiaButton.Name = "deployRussiaButton";
+            this.deployRussiaButton.Size = new System.Drawing.Size(145, 23);
+            this.deployRussiaButton.TabIndex = 5;
+            this.deployRussiaButton.Text = "Deploy (Only Russia)";
+            this.deployRussiaButton.UseVisualStyleBackColor = true;
+            this.deployRussiaButton.Click += new System.EventHandler(this.deployRussiaButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(170, 257);
+            this.ClientSize = new System.Drawing.Size(170, 277);
+            this.Controls.Add(this.deployRussiaButton);
             this.Controls.Add(this.AdvancedGroupBox);
             this.Controls.Add(this.AdvancedCheckBox);
             this.Controls.Add(this.progressBar);
@@ -185,6 +199,7 @@ namespace AngryHammer
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericArgUpDown;
+        private System.Windows.Forms.Button deployRussiaButton;
     }
 }
 
